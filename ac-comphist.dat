@@ -1,0 +1,26 @@
+((("ac-config-default" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("auto-complete-config" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("auto-composition-mode" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("auto-complete" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("require" .
+   [0 0 1 1 0 0 0])
+  ("lambda" .
+   [0 0 0 1 0 0])
+  ("emacs-lisp-mode-hook" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0])
+  ("emacs-lisp-mode" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])
+  ("emacs-lisp" .
+   [0 0 0 0 0 1 0 0 0 0])
+  ("add-hook" .
+   [1 0 0 0 0 0 0 0])
+  ("include" .
+   [0 0 0 0 1 0 0])
+  ("int" .
+   [0 0 2])
+  ("void" .
+   [0 0 0 1])))
