@@ -347,3 +347,57 @@
 
 (require 'auto-complete-config)
 (ac-config-default)
+
+;; markdown
+(autoload 'markdown-mode "markdown-mode"
+   "Major mode for editing Markdown files" t)
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
+(autoload 'gfm-mode "gfm-mode"
+   "Major mode for editing GitHub Flavored Markdown files" t)
+(add-to-list 'auto-mode-alist '("README\\.md\\'" . gfm-mode))
+(setq markdown-command "multimarkdown")
+
+;; powerline
+(require 'powerline)
+(powerline-default-theme)
+(setq ns-use-srgb-colorspace nil)
+(set-face-attribute 'mode-line nil
+                    :foreground "#fff"
+                    :background "#FF0066"
+                    :box nil)
+
+(set-face-attribute 'powerline-active1 nil
+                    :foreground "#fff"
+                    :background "#FF6699"
+                    :inherit 'mode-line)
+
+(set-face-attribute 'powerline-active2 nil
+                    :foreground "#000"
+                    :background "#ffaeb9"
+                    :inherit 'mode-line)
+
+
+;; ruby-mode
+ (autoload 'ruby-mode "ruby-mode"
+   "Mode for editing ruby source files" t)
+  (add-to-list 'auto-mode-alist '("\\.rb$" . ruby-mode))
+  (add-to-list 'auto-mode-alist '("Capfile$" . ruby-mode))
+  (add-to-list 'auto-mode-alist '("Gemfile$" . ruby-mode))
+  (add-to-list 'auto-mode-alist '("[Rr]akefile$" . ruby-mode))
+  
+  
+;; yaml-mode
+(require 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.ya?ml$" . yaml-mode))
+(define-key yaml-mode-map "\C-m" 'newline-and-indent)
+
+;; rainbow
+(require 'rainbow-delimiters)
+(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
+
+;; anything
+(require 'anything)
+
+
