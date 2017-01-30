@@ -400,4 +400,5 @@
 ;; anything
 (require 'anything)
 
-
+;; java
+(require 'eclim)
